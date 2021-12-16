@@ -167,7 +167,8 @@ footer {
     display: flex;
     justify-content: center;
 }
- .footer_copyright {
+
+.footer__copyright {
      margin-top: 40px;
      text-align: center;
      opacity: 0.5;
