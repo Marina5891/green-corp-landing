@@ -15,8 +15,28 @@ header {
     z-index: 1;
 }
 
+@media (max-width: 720px) {
+    header {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    header {
+        padding-right: 10px;
+        padding-left: 10px;
+    }    
+}
+
 .header__logo {
     height: 30px;
+}
+
+@media (max-width: 320px) {
+    .header__logo {
+        height: 20px;
+    }
 }
 
 a {
@@ -30,6 +50,12 @@ header a {
     margin-right: 25px;
 }
 
+@media (max-width: 320px) {
+    header a {
+        margin-right: 10px;
+    }
+}
+
 button {
     font-family: 'Raleway', sans-serif;
     font-size: 15px;
@@ -40,12 +66,12 @@ button {
     cursor: pointer;
     box-shadow: 0 16px 36px rgb(52 213 68 / 22%);
     padding: 15px;
-    transition: background-color 0.3 ease-in;
 }
 
 button:hover {
     background-color: #f6980c;
     box-shadow: 0 16px 36px rgba(246 152 12/20%);
+    transition: background-color 0.3s ease-in;
 }
 
 /* Стили титульника */
@@ -61,6 +87,20 @@ button:hover {
     background-size: cover;
 }
 
+@media (max-width: 720px) {
+    .about {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    .about {
+        padding: 50px 10px;
+        flex-direction: column-reverse;
+    }
+}
+
 .about__info {
     max-width: 550px;
 }
@@ -68,6 +108,20 @@ button:hover {
 .about h1 {
     font-size: 70px;
     line-height: 76px;
+}
+
+@media (max-width: 720px) {
+    .about h1 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 320px) {
+    .about h1 {
+        font-size: 36px;
+        line-height: 40px;
+    }
 }
 
 .about p {
@@ -84,7 +138,19 @@ button:hover {
 }
 
 .about__image {
-    width: 500px;
+    max-width: 500px;
+}
+
+@media (max-width: 720px) {
+    .about__image {
+        width: 280px;
+    }
+}
+
+@media (max-width: 320px) {
+    .about__image {
+        width: 280px;
+    }
 }
 
 @keyframes rotation {
@@ -102,6 +168,20 @@ button:hover {
     animation-timing-function: linear;
 }
 
+@media (max-width: 720px) {
+    .about__sun-image {
+        width: 75px;
+        height: 75px;
+    }
+}
+
+@media (max-width: 320px) {
+    .about__sun-image {
+        width: 75px;
+        height: 75px;
+    }
+}
+
 /* Стили формы */
 
 .form {
@@ -115,12 +195,40 @@ button:hover {
     text-align: center;
 }
 
+@media (max-width: 720px) {
+    .form {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    .form {
+        padding: 50px 10px;
+    }
+}
+
 .form__container {
-    width: 550px;
+    max-width: 550px;
 }
 
 .form h1 {
-    font-size: 48px;
+    font-size: 70px;
+    line-height: 76px;
+}
+
+@media (max-width: 720px) {
+    .form h1 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 320px) {
+    .form h1 {
+        font-size: 36px;
+        line-height: 40px;
+    }
 }
 
 .form p {
@@ -153,6 +261,7 @@ button:hover {
     padding: 0 20px;
     border-radius: 15px;
     border: none;
+    outline: none;
 }
 
 input {
@@ -177,9 +286,28 @@ footer {
     font-weight: 600;
 }
 
+@media (max-width: 720px) {
+    footer {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    footer {
+        padding: 50px 10px;
+    }
+}
+
 .footer__container {
     display: flex;
     justify-content: center;
+}
+
+@media (max-width: 320px) {
+    .footer__container {
+        flex-direction: column;
+    }
 }
 
 .footer__copyright {
@@ -192,7 +320,7 @@ footer {
     margin-right: 80px;
 }
 
-.footer__group h3 {
+footer h3 {
     font-size: 16px;
     opacity: 0.7;
     margin-bottom: 30px;
