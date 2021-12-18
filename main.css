@@ -89,6 +89,7 @@ button:hover {
 }
 
 .about__sun-image {
+    position: absolute;
     width: 100px;
     height: 100px;
     animation-name: rotation;
