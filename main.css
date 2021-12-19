@@ -74,6 +74,10 @@ button:hover {
     transition: background-color 0.3s ease-in;
 }
 
+.fa-angle-right {
+    margin-left: 10px;
+}
+
 /* Стили титульника */
 
 .about {
