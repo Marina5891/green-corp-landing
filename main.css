@@ -89,6 +89,7 @@ button:hover {
     background: url('img/back.png') no-repeat;
     background-position: center;
     background-size: cover;
+    position: relative;
 }
 
 @media (max-width: 720px) {
@@ -103,6 +104,13 @@ button:hover {
         padding: 50px 10px;
         flex-direction: column-reverse;
     }
+}
+
+.orb-canvas {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
 }
 
 .about__info {
@@ -323,6 +331,7 @@ button:hover {
     .features__savings-box {
         margin-right: 0;
         margin-bottom: 30px;
+        
     }
 }
 
